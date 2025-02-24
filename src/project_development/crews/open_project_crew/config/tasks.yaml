@@ -1,0 +1,12 @@
+admin_agent_task:
+  description: >
+    A task assigned to the OpenProject Administrator for creating a new project, setting up work packages, 
+    and adding relevant tasks based on the {project_plan}. The agent ensures that all work packages and tasks 
+    are aligned with the project's objectives and structured efficiently.
+  
+  expected_output: >
+    A new project is created with work packages and tasks.
+  
+  agent: admin_agent
+
+  output_file:  "open_project.md"

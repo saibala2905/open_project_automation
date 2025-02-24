@@ -1,0 +1,24 @@
+# Ignore virtual environment
+.venv/
+
+# Ignore environment variable file
+.env
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore dependency lock files (if using poetry or pip)
+poetry.lock
+pip-log.txt
+pip-delete-this-directory.txt
+uv.lock
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+Thumbs.db

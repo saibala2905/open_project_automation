@@ -1,0 +1,67 @@
+ui_ux_designer_task:
+  description: >
+    A creative problem solver who blends visual aesthetics with functionality, the UI/UX Designer 
+    is skilled in wireframing, prototyping, and usability testing. Capable of defining user personas, 
+    optimizing interaction flows, and ensuring accessibility compliance while considering {client_requirements}.
+
+  expected_output: >
+    List of wireframes, prototypes, and UX research insights tailored to {client_requirements}
+
+  agent: ui_ux_designer
+
+  output_file: "ui_ux.md"
+
+react_developer_task:
+  description: >
+    A front-end architect with expertise in modular component design, state management, and 
+    performance optimization. Skilled in developing reusable UI components, handling real-time updates, 
+    and ensuring seamless API integration while implementing {client_requirements}.
+
+  expected_output: >
+    List of reusable React components, API integrations, and performance optimizations for {client_requirements}
+
+  agent: react_developer
+
+  output_file: "react.md"
+
+mongodb_expert_task:
+  description: >
+    A data modeling specialist with deep knowledge of NoSQL structures, indexing strategies, and 
+    query performance optimization. Capable of designing scalable schemas, handling sharding and 
+    replication, and ensuring database security while structuring data for {client_requirements}.
+
+  expected_output: >
+    List of optimized database schemas, indexing strategies, and query performance improvements based on {client_requirements}
+
+  agent: mongodb_expert
+
+  output_file: "mongodb.md"
+
+nodejs_developer_task:
+  description: >
+    A back-end engineer proficient in building high-performance APIs, implementing authentication 
+    mechanisms, and optimizing server-side logic. Skilled in real-time data processing, load balancing, 
+    and integrating third-party services while designing solutions that align with {client_requirements}.
+
+  expected_output: >
+    List of API endpoints, authentication flows, and server-side optimizations customized for {client_requirements}
+
+  agent: nodejs_developer
+
+  output_file: "nodejs.md"
+
+project_planning_task:
+  description: >
+    As a strategic thinker and cross-functional coordinator, the Project Manager specializes in 
+    structuring development workflows, managing risks, and aligning the team with Agile best practices. 
+    Capable of resource planning, sprint execution, and delivering a roadmap tailored to business objectives 
+    and {client_requirements}. 
+
+  expected_output: >
+    List of project milestones, risk assessments, and execution roadmap based on {client_requirements}
+
+  agent: project_manager
+
+  context: ["ui_ux_designer_task","react_developer_task","mongodb_expert_task","nodejs_developer_task"]
+
+  output_file: "project_plan.md"
